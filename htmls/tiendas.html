@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <title>Tiendas</title>
+</head>
+
+<body>
+
+    <!------------------------------------------Header----------------------------------------------------->
+    <header class="header__secc">
+        <nav class="navbar">
+            <a href="index.html"><img src="../imgs/logo.png" alt="Logo" class="navbar__logo"></a>
+            <ul class="navbar__list">
+                <li class="navbar__li">
+                    <a href="index.html" class="navbar__a">Home</a>
+                </li>
+                <li class="navbar__li">
+                    <a href="quienesSomos.html" class="navbar__a">Quiénes somos</a>
+                </li>
+                <li class="navbar__li">
+                    <a href="productos.html" class="navbar__a">Productos</a>
+                </li>
+                <li class="navbar__li">
+                    <a href="contacto.html" class="navbar__a">Contacto</a>
+                </li>
+                <li class="navbar__li">
+                    <a href="tiendas.html" class="navbar__a">Tiendas</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <!------------------------------------------Ubicaciones de las tiendas----------------------------------------------------->
+    <main class="main__secc">
+
+        <h1 class="places__title">¿Dónde estamos?</h1>
+
+        <section class="places">
+
+            <img src="../imgs/tiendaVteLopez.jpg" alt="foto tienda" class="places__img">
+
+            <div class="places__descr">
+                <h2 class="places__subtitle">Vicente López</h2>
+                <p class="places__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio tempora tenetur
+                    laudantium ratione nobis
+                    obcaecati dolorem id adipisci voluptatum hic, labore minus a atque ducimus maxime sint qui animi ab.
+                </p>
+                <div class="places__map">
+                    <img src="../imgs/mapa.png" alt="direccion" class="places__icon">
+                    <a href="#" target="_blank" class="places__direction">Avenida Maipú 589</a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="places places--reverse">
+            <img src="../imgs/tiendaMartinez1.jpg" alt="foto mostrador" class="places__img">
+            <div class="places__descr places__descr--martinez">
+                <h2 class="places__subtitle">Martínez</h2>
+                <p class="places__text places__text--martinez">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Odio tempora tenetur
+                    laudantium ratione nobis
+                    obcaecati dolorem id adipisci voluptatum hic, labore minus a atque ducimus maxime sint qui animi ab.
+                </p>
+                <div class="places__map">
+                    <img src="../imgs/mapa.png" alt="direccion" class="places__icon">
+                    <a href="#" target="_blank" class="places__direction">Avenida Alvear 784</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!------------------------------------------Footer----------------------------------------------------->
+
+    <footer class="footer">
+
+        <div class="footer__container">
+
+            <ul class="footer__list footer__list--space">
+                <li class="footer__li">
+                    <a href="index.html" class="footer__a">Home</a>
+                </li>
+                <li class="footer__li">
+                    <a href="quienesSomos.html" class="footer__a">Quiénes somos</a>
+                </li>
+                <li class="footer__li">
+                    <a href="productos.html" class="footer__a">Productos</a>
+                </li>
+                <li class="footer__li">
+                    <a href="contacto.html" class="footer__a">Contacto</a>
+                </li>
+                <li class="footer__li">
+                    <a href="tiendas.html" class="footer__a">Tiendas</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="footer__container">
+
+            <h3 class="footer__title">Contacto</h3>
+
+            <ul class="footer__list">
+                <li class="footer__li">
+                    <img src="../imgs/whatsapp.png" alt="icono Whatsapp" class="footer__icon">
+                    <a href="tel:+15.541.879" class="footer__a">+15 541 879</a>
+                </li>
+                <li class="footer__li">
+                    <img src="../imgs/telefono.png" alt="icono teléfono" class="footer__icon">
+                    <a href="tel:+4-789-548" class="footer__a">4-789-548</a>
+                </li>
+                <li class="footer__li">
+                    <img src="../imgs/email.png" alt="email" class="footer__icon">
+                    <a href="mailto:floridacupcakes@gmail.com" class="footer__a">floridacupcakes@gmail.com</a>
+                </li>
+                <li class="footer__li">
+                    <img src="../imgs/mapa.png" alt="direccion" width="25px" class="footer__icon">
+                    <a href="#" target="_blank" class="footer__a">Avenida Maipú 589/ Avenida Alvear 784</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer__container">
+
+            <h3 class="footer__title">Enteráte de nuestras novedades</h3>
+
+            <label for="email" class="footer__label">Escribí tu email:</label>
+            <input type="email" id="email" class="footer__input">
+            <button class="footer__button">Enviar</button>
+
+            <h3 class="footer__title">Buscanos en redes</h3>
+
+            <ul class="footer__redes">
+                <li class="footer__li">
+                    <a href="instagram.com/floridacupcakes"><img src="../imgs/instagram.png" alt="Instagram"
+                            class="footer__icon"></a>
+                </li>
+                <li class="footer__li">
+                    <a href="facebook.com/floridacupcakes"><img src="../imgs/facebook.png" alt="Facebook"
+                            class="footer__icon"></a>
+                </li>
+                <li class="footer__li">
+                    <a href="tel:+4-789-548"><img src="../imgs/whatsapp.png" alt="Whatsapp" class="footer__icon"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
