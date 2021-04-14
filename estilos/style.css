@@ -33,18 +33,6 @@ body {
   margin-left: 70px;
   margin-bottom: 50px;
   margin-top: 15px;
-  animation-name: aparecer;
-  animation-duration: 1.5s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes aparecer {
-  0% {
-    margin-left: -300px;
-  }
-  100% {
-    margin-left: 90px;
-  }
 }
 
 .header__button {
@@ -66,22 +54,6 @@ body {
   background-color: rgba(247, 38, 138, 0.8);
   box-shadow: 0 0.5em 0.5em -0.4em rgba(0, 0, 0, 0.5);
   cursor: pointer;
-}
-
-.header__mainButton {
-  animation-name: btn;
-  /* animation-delay: 1s; */
-  animation-fill-mode: forwards;
-  animation-duration: 3.5s;
-}
-
-@keyframes btn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 /****************************Nav******************************/
@@ -107,8 +79,8 @@ body {
 }
 
 .navbar__a:hover {
-  color: #f7268a;
-  /* border-bottom: 2px solid #f7268a; */
+  font-weight: 350;
+  border-bottom: 2px solid #f7268a;
 }
 
 .navbar__list {
@@ -250,13 +222,13 @@ body {
   text-align: center;
 }
 
-.section__imgProducts {
+/* .section__imgProducts {
   transition: all 1s ease;
 }
 
 .section__imgProducts:hover {
   transform: scale(1.2, 1.2);
-}
+} */
 
 /*******************************Contacto.html*****************************/
 .main__secc--contact {
@@ -338,7 +310,7 @@ body {
   padding: 5px;
 }
 .section__buttonform:hover {
-  font-weight: 400;
+  /* font-weight: 400; */
   border-bottom: 2px solid #f7268a;
 }
 
@@ -423,7 +395,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background: linear-gradient(to top, #d9a7c7, #fffcdc);
+  background: #f5eef0;
   height: 40vh;
 }
 
@@ -494,6 +466,6 @@ body {
 }
 
 .footer__button:hover {
-  font-weight: 400;
+  /* font-weight: 400; */
   border-bottom: 2px solid #f7268a;
 }
