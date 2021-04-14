@@ -14,7 +14,37 @@
 <body>
     <!-------------------------------------------Header---------------------------------------------------->
     <header class="header">
-        <nav class="navbar">
+        <nav id="mainNavbar" class="navbar navbar-expand-md navbar--padding fixed-top"
+            style="background-color:rgba(246, 241, 241, 0.9)">
+            <a href="index.html" class="navbar-brand"><img src="../imgs/logo.png" alt="Logo" width="210"
+                    height="70"></a>
+            <button class="navbar-toggler custom-toggler" data-toggle="collapse" data-target="#navLinks"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navLinks">
+                <ul class="navbar-nav ml-auto navbar__list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link navbar__a">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="quienesSomos.html" class="nav-link navbar__a">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="productos.html" class="nav-link navbar__a">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacto.html" class="nav-link navbar__a">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tiendas.html" class="nav-link navbar__a">Tiendas</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <!-- <nav class="navbar">
             <a href="index.html"><img src="../imgs/logo.png" alt="Logo" class="navbar__logo"></a>
             <ul class="navbar__list">
                 <li class="navbar__li">
@@ -33,10 +63,14 @@
                     <a href="tiendas.html" class="navbar__a">Tiendas</a>
                 </li>
             </ul>
-        </nav>
-        <h1 class="mainTitle">Endulzá tu día</h1>
-        <div class="header__mainButton">
-            <a href="productos.html" class="header__button">Cupcakes</a>
+        </nav> -->
+
+
+        <div class="slogan">
+            <h1 class="mainTitle">Endulzá tu día</h1>
+            <div class="header__mainButton">
+                <a href="productos.html" class="header__button">Cupcakes</a>
+            </div>
         </div>
 
     </header>
