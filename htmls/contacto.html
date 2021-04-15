@@ -5,14 +5,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/style.css">
     <title>Contacto </title>
 </head>
 
 <body>
     <!------------------------------------------Header----------------------------------------------------->
+    <header class="header__seccion">
+        <nav id="mainNavbar" class="navbar navbar-expand-md navbar--padding fixed-top"
+            style="background-color:rgba(246, 241, 241, 0.9)">
+            <a href="index.html" class="navbar-brand"><img src="../imgs/logo.png" alt="Logo" width="210"
+                    height="70"></a>
+            <button class="navbar-toggler custom-toggler" data-toggle="collapse" data-target="#navLinks"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navLinks">
+                <ul class="navbar-nav ml-auto navbar__list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link navbar__a">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="quienesSomos.html" class="nav-link navbar__a">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="productos.html" class="nav-link navbar__a">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacto.html" class="nav-link navbar__a">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tiendas.html" class="nav-link navbar__a">Tiendas</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-    <header class="header__secc">
+
+        <!-- <header class="header__secc">
         <nav class="navbar">
             <a href="index.html"><img src="../imgs/logo.png" alt="Logo" class="navbar__logo"></a>
             <ul class="navbar__list">
@@ -33,144 +65,153 @@
                 </li>
             </ul>
         </nav>
-    </header>
+    </header> -->
 
-    <!-------------------------------------------Formulario---------------------------------------------------->
-    <main class="main__secc main__secc--contact">
-        <section class="sectionContact">
-            <h1 class="section__title">Contacto</h1>
-            <form class="section__form">
-                <div class="section__complete">
-                    <label for="nombre" class="section__label">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" class="section__usuario">
-
-
-                    <label for="apellido" class="section__label section__label--apellido">Apellido:</label>
-                    <input type="text" id="apellido" name="Apellido" class="section__usuario">
-                </div>
+        <!-------------------------------------------Formulario---------------------------------------------------->
+        <main class="main__secc main__secc--contact">
+            <section class="sectionContact">
+                <h1 class="section__title">Contacto</h1>
+                <form class="section__form">
+                    <div class="section__complete">
+                        <label for="nombre" class="section__label">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" class="section__usuario">
 
 
-
-                <div class="section__complete">
-                    <label for="email" class="section__label" class="section__label">E-mail:</label>
-                    <input type="email" id="email" name="email" required class="section__usuario">
-                </div>
+                        <label for="apellido" class="section__label section__label--apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="Apellido" class="section__usuario">
+                    </div>
 
 
 
-                <div class="section__complete">
-                    <label for="asunto" class="section__label">Asunto:</label>
-                    <select name="asunto" id="asunto" class="section__caja">
-                        <option value="Productos" class="section__option">Productos</option>
-                        <option value="Precios" class="section__option">Precios</option>
-                        <option value="Tiendas" class="section__option">Tiendas</option>
-                        <option value="Pedidos" class="section__option">Pedidos</option>
-                        <option value="Otro" class="section__option">Otro</option>
-                    </select>
-                </div>
+                    <div class="section__complete">
+                        <label for="email" class="section__label" class="section__label">E-mail:</label>
+                        <input type="email" id="email" name="email" required class="section__usuario">
+                    </div>
 
 
 
-                <div class="section__complete">
-                    <label for="novedades" class="section__label">Deseo recibir novedades de Florida Cupcakes</label>
-                    <input type="checkbox" name="novedades" id="novedades" class="section__checkbox">
-                </div>
+                    <div class="section__complete">
+                        <label for="asunto" class="section__label">Asunto:</label>
+                        <select name="asunto" id="asunto" class="section__caja">
+                            <option value="Productos" class="section__option">Productos</option>
+                            <option value="Precios" class="section__option">Precios</option>
+                            <option value="Tiendas" class="section__option">Tiendas</option>
+                            <option value="Pedidos" class="section__option">Pedidos</option>
+                            <option value="Otro" class="section__option">Otro</option>
+                        </select>
+                    </div>
 
 
 
-                <div class="section__comentario">
-                    <label for="comentario" class="section__label section__label--comentario">Escribinos tu
-                        consulta:</label>
-                    <textarea name="msj" id="comentario" cols="30" rows="10" placeholder="Escribí acá"
-                        class="section__caja"></textarea>
-
-                </div>
+                    <div class="section__complete">
+                        <label for="novedades" class="section__label">Deseo recibir novedades de Florida
+                            Cupcakes</label>
+                        <input type="checkbox" name="novedades" id="novedades" class="section__checkbox">
+                    </div>
 
 
 
-                <div class="section__complete">
-                    <input type="submit" value="Enviar" class="section__buttonform">
-                    <input type="reset" value="Reestablecer" class="section__buttonform">
-                </div>
-            </form>
+                    <div class="section__comentario">
+                        <label for="comentario" class="section__label section__label--comentario">Escribinos tu
+                            consulta:</label>
+                        <textarea name="msj" id="comentario" cols="30" rows="10" placeholder="Escribí acá"
+                            class="section__caja"></textarea>
 
-        </section>
-    </main>
-
-    <!-------------------------------------------Footer---------------------------------------------------->
-    <footer class="footer">
-
-        <div class="footer__container">
-
-            <ul class="footer__list footer__list--space">
-                <li class="footer__li">
-                    <a href="index.html" class="footer__a">Home</a>
-                </li>
-                <li class="footer__li">
-                    <a href="quienesSomos.html" class="footer__a">Quiénes somos</a>
-                </li>
-                <li class="footer__li">
-                    <a href="productos.html" class="footer__a">Productos</a>
-                </li>
-                <li class="footer__li">
-                    <a href="contacto.html" class="footer__a">Contacto</a>
-                </li>
-                <li class="footer__li">
-                    <a href="tiendas.html" class="footer__a">Tiendas</a>
-                </li>
-            </ul>
-        </div>
+                    </div>
 
 
-        <div class="footer__container">
 
-            <h3 class="footer__title">Contacto</h3>
+                    <div class="section__complete">
+                        <input type="submit" value="Enviar" class="section__buttonform">
+                        <input type="reset" value="Reestablecer" class="section__buttonform">
+                    </div>
+                </form>
 
-            <ul class="footer__list">
-                <li class="footer__li">
-                    <img src="../imgs/whatsapp.png" alt="icono Whatsapp" class="footer__icon">
-                    <a href="tel:+15.541.879" class="footer__a">+15 541 879</a>
-                </li>
-                <li class="footer__li">
-                    <img src="../imgs/telefono.png" alt="icono teléfono" class="footer__icon">
-                    <a href="tel:+4-789-548" class="footer__a">4-789-548</a>
-                </li>
-                <li class="footer__li">
-                    <img src="../imgs/email.png" alt="email" class="footer__icon">
-                    <a href="mailto:floridacupcakes@gmail.com" class="footer__a">floridacupcakes@gmail.com</a>
-                </li>
-                <li class="footer__li">
-                    <img src="../imgs/mapa.png" alt="direccion" width="25px" class="footer__icon">
-                    <a href="#" target="_blank" class="footer__a">Avenida Maipú 589/ Avenida Alvear 784</a>
-                </li>
-            </ul>
-        </div>
+            </section>
+        </main>
 
-        <div class="footer__container">
+        <!-------------------------------------------Footer---------------------------------------------------->
+        <footer class="footer">
 
-            <h3 class="footer__title">Enteráte de nuestras novedades</h3>
+            <div class="footer__container">
 
-            <label for="email" class="footer__label">Escribí tu email:</label>
-            <input type="email" id="email" class="footer__input">
-            <button class="footer__button">Enviar</button>
+                <ul class="footer__list footer__list--space">
+                    <li class="footer__li">
+                        <a href="index.html" class="footer__a">Home</a>
+                    </li>
+                    <li class="footer__li">
+                        <a href="quienesSomos.html" class="footer__a">Quiénes somos</a>
+                    </li>
+                    <li class="footer__li">
+                        <a href="productos.html" class="footer__a">Productos</a>
+                    </li>
+                    <li class="footer__li">
+                        <a href="contacto.html" class="footer__a">Contacto</a>
+                    </li>
+                    <li class="footer__li">
+                        <a href="tiendas.html" class="footer__a">Tiendas</a>
+                    </li>
+                </ul>
+            </div>
 
-            <h3 class="footer__title">Buscanos en redes</h3>
 
-            <ul class="footer__redes">
-                <li class="footer__li">
-                    <a href="instagram.com/floridacupcakes"><img src="../imgs/instagram.png" alt="Instagram"
-                            class="footer__icon"></a>
-                </li>
-                <li class="footer__li">
-                    <a href="facebook.com/floridacupcakes"><img src="../imgs/facebook.png" alt="Facebook"
-                            class="footer__icon"></a>
-                </li>
-                <li class="footer__li">
-                    <a href="tel:+4-789-548"><img src="../imgs/whatsapp.png" alt="Whatsapp" class="footer__icon"></a>
-                </li>
-            </ul>
-        </div>
-    </footer>
+            <div class="footer__container">
+
+                <h3 class="footer__title">Contacto</h3>
+
+                <ul class="footer__list">
+                    <li class="footer__li">
+                        <img src="../imgs/whatsapp.png" alt="icono Whatsapp" class="footer__icon">
+                        <a href="tel:+15.541.879" class="footer__a">+15 541 879</a>
+                    </li>
+                    <li class="footer__li">
+                        <img src="../imgs/telefono.png" alt="icono teléfono" class="footer__icon">
+                        <a href="tel:+4-789-548" class="footer__a">4-789-548</a>
+                    </li>
+                    <li class="footer__li">
+                        <img src="../imgs/email.png" alt="email" class="footer__icon">
+                        <a href="mailto:floridacupcakes@gmail.com" class="footer__a">floridacupcakes@gmail.com</a>
+                    </li>
+                    <li class="footer__li">
+                        <img src="../imgs/mapa.png" alt="direccion" width="25px" class="footer__icon">
+                        <a href="#" target="_blank" class="footer__a">Avenida Maipú 589/ Avenida Alvear 784</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__container">
+
+                <h3 class="footer__title">Enteráte de nuestras novedades</h3>
+
+                <label for="email" class="footer__label">Escribí tu email:</label>
+                <input type="email" id="email" class="footer__input">
+                <button class="footer__button">Enviar</button>
+
+                <h3 class="footer__title">Buscanos en redes</h3>
+
+                <ul class="footer__redes">
+                    <li class="footer__li">
+                        <a href="instagram.com/floridacupcakes"><img src="../imgs/instagram.png" alt="Instagram"
+                                class="footer__icon"></a>
+                    </li>
+                    <li class="footer__li">
+                        <a href="facebook.com/floridacupcakes"><img src="../imgs/facebook.png" alt="Facebook"
+                                class="footer__icon"></a>
+                    </li>
+                    <li class="footer__li">
+                        <a href="tel:+4-789-548"><img src="../imgs/whatsapp.png" alt="Whatsapp"
+                                class="footer__icon"></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+            crossorigin="anonymous"></script>
 
 
 </body>
