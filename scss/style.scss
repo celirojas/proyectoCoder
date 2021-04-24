@@ -1,5 +1,14 @@
 $tamanio-grande: 160px;
 
+@mixin boton {
+  border: none;
+  background-color: rgba(246, 241, 241, 0);
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 16px;
+  padding: 5px;
+}
+
 * {
   box-sizing: content-box;
   margin: 0;
@@ -329,12 +338,7 @@ body {
 }
 
 .section__buttonform {
-  border: none;
-  background-color: rgba(246, 241, 241, 0);
-  font-family: Roboto;
-  font-weight: 300;
-  font-size: 16px;
-  padding: 5px;
+  @include boton;
 }
 .section__buttonform:hover {
   /* font-weight: 400; */
