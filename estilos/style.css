@@ -35,7 +35,16 @@ body {
   font-weight: 900;
   margin-left: 70px;
   margin-bottom: 50px;
-  margin-top: 5px; }
+  margin-top: 5px;
+  animation-name: aparecer;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards; }
+
+@keyframes aparecer {
+  0% {
+    margin-left: -300px; }
+  100% {
+    margin-left: 90px; } }
 
 .header__button {
   background-color: #f7268a;
@@ -207,13 +216,12 @@ body {
   line-height: 30px;
   text-align: center; }
 
-/* .section__imgProducts {
-    transition: all 1s ease;
-  }
-  
-  .section__imgProducts:hover {
-    transform: scale(1.2, 1.2);
-  } */
+.section__imgProducts {
+  transition: all 1s ease; }
+
+.section__imgProducts:hover {
+  transform: scale(1.2, 1.2); }
+
 /*******************************Contacto.html*****************************/
 .main__secc--contact {
   background-image: url(../imgs/fondoContacto.jpg);
