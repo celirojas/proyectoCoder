@@ -329,8 +329,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background: #f5eef0;
-  height: 40vh; }
+  background: #f5eef0; }
   .footer__container {
     display: flex;
     flex-direction: column;
@@ -345,7 +344,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: center;
     height: 25vh; }
   .footer__list--space {
     margin-top: 35px; }
@@ -387,3 +386,7 @@ body {
 @media only screen and (max-width: 992px) {
   .header {
     height: 65vh; } }
+
+@media only screen and (max-width: 992px) {
+  .footer {
+    flex-direction: column; } }
