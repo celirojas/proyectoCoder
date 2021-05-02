@@ -32,16 +32,7 @@ body {
   font-weight: 900;
   margin-left: 70px;
   margin-bottom: 50px;
-  margin-top: 5px;
-  animation-name: aparecer;
-  animation-duration: 1.5s;
-  animation-fill-mode: forwards; }
-
-@keyframes aparecer {
-  0% {
-    margin-left: -300px; }
-  100% {
-    margin-left: 90px; } }
+  margin-top: 5px; }
 
 .header__button {
   background-color: #f7268a;
@@ -61,18 +52,6 @@ body {
   background-color: rgba(247, 38, 138, 0.8);
   box-shadow: 0 0.5em 0.5em -0.4em rgba(0, 0, 0, 0.5);
   cursor: pointer; }
-
-.header__mainButton {
-  animation-name: btn;
-  /* animation-delay: 1s; */
-  animation-fill-mode: forwards;
-  animation-duration: 3.5s; }
-
-@keyframes btn {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
 
 /****************************Nav******************************/
 .navbar--padding {
@@ -385,8 +364,16 @@ body {
 
 @media only screen and (max-width: 992px) {
   .header {
-    height: 100vh; } }
-
-@media only screen and (max-width: 992px) {
+    height: 100vh; }
   .footer {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .header__button {
+    display: none; }
+  .section__cont {
+    height: 400px; } }
+
+@media (max-width: 1300px) {
+  .header__button {
+    display: none; }
+  .mainTitle {
+    font-size: 65px; } }
