@@ -162,7 +162,8 @@ a:hover {
 .section__textProducts {
   color: #2b2b2b;
   font-weight: 300;
-  line-height: 30px; }
+  line-height: 30px;
+  text-align: center; }
 
 .section__textPrice {
   color: #2b2b2b;
@@ -266,7 +267,6 @@ a:hover {
     width: 40%; }
   .places__descr {
     width: 40%;
-    height: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -284,7 +284,7 @@ a:hover {
     line-height: 30px;
     margin-top: 30px;
     margin-left: 30px;
-    text-align: justify; }
+    text-align: center; }
 
 .places--reverse {
   flex-direction: row-reverse; }
@@ -388,6 +388,21 @@ a:hover {
     flex-direction: column-reverse;
     justify-content: space-evenly;
     align-items: center; }
+  .section__descr {
+    width: 80%; }
+  .section__catalogo {
+    display: flex;
+    flex-direction: column; }
+  .sectionContact {
+    width: 90%; }
+  .places,
+  .places--reverse {
+    flex-direction: column-reverse; }
+  .places__descr {
+    width: 80%; }
+  .places__img {
+    width: 60%;
+    margin: 15px 0px; }
   .footer {
     flex-direction: column; } }
 
@@ -402,7 +417,9 @@ a:hover {
     background-color: rgba(247, 38, 138, 0.8);
     font-size: 50px; }
   .header__button {
-    display: none; } }
+    display: none; }
+  .section__descr {
+    width: 90%; } }
 
 @media (max-width: 375px) {
   .section__cont {
