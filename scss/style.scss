@@ -90,7 +90,7 @@ a:hover {
 .navbar__a {
   color: #2b2b2b;
   text-decoration: none;
-  /* transition: color 0.3s ease; */
+  transition: all 0.5s ease;
   font-size: 18px;
   font-weight: 350;
 }
@@ -98,7 +98,6 @@ a:hover {
 .navbar__a:hover {
   font-weight: 350;
   color: #f7268a;
-  /* border-bottom: 2px solid #f7268a; */
 }
 
 .navbar__list {
@@ -300,10 +299,11 @@ a:hover {
 
 .section__buttonform {
   @include boton;
+  transition: all 0.5s;
 }
+
 .section__buttonform:hover {
-  /* font-weight: 400; */
-  border-bottom: 2px solid #f7268a;
+  color: #f7268a;
 }
 
 /*******************************Tiendas.html*****************************/
@@ -380,7 +380,7 @@ a:hover {
 
 .footer {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
   background: #f5eef0;
   // height: 40vh;
@@ -388,8 +388,8 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    height: 30vh;
+    justify-content: center;
+    gap: 8px;
     padding-top: 30px;
   }
   &__list {
@@ -398,13 +398,11 @@ a:hover {
     color: #2b2b2b;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    height: 25vh;
+    gap: 10px;
   }
-  &__list--space {
-    margin-top: 35px;
-  }
+
   &__redes {
     width: 50%;
     display: flex;
@@ -447,11 +445,21 @@ a:hover {
     color: #2b2b2b;
     font-size: 15px;
     font-family: Roboto, sans-serif;
+    position: relative;
+  }
+  &__button::after {
+    content: "";
+    height: 1.5px;
+    width: 0;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    background-color: #f7268a;
+    transition: 0.5s all;
   }
 
-  &__button:hover {
-    /* font-weight: 400; */
-    border-bottom: 2px solid #f7268a;
+  &__button:hover::after {
+    width: 100%;
   }
 }
 
@@ -531,9 +539,12 @@ a:hover {
   .section__descr {
     width: 90%;
   }
-}
-@media (max-width: 375px) {
   .section__cont {
-    height: 40vh;
+    height: fit-content;
   }
 }
+// @media (max-width: 375px) {
+//   .section__cont {
+//     height: 40vh;
+//   }
+// }
