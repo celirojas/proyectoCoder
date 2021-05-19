@@ -254,6 +254,10 @@ a:hover {
   height: 60vh;
 }
 
+.section__complete {
+  display: flex;
+}
+
 .section__comentario {
   display: flex;
   flex-direction: column;
@@ -336,7 +340,6 @@ a:hover {
     font-weight: 300;
     font-style: italic;
     font-size: 30px;
-    /* margin: 5px 35px; */
     text-align: center;
   }
   &__text {
@@ -463,13 +466,6 @@ a:hover {
   }
 }
 
-/* MEDIA QUERIES */
-// @media (max-width: 1300px) {
-//   .mainTitle {
-//     font-size: 65px;
-//   }
-// }
-
 @media (max-width: 768px) {
   .header {
     height: 50vh;
@@ -513,11 +509,12 @@ a:hover {
     width: 80%;
   }
   .places__img {
-    width: 60%;
+    width: 80%;
     margin: 15px 0px;
   }
   .footer {
     flex-direction: column;
+    align-items: center;
   }
 }
 @media (max-width: 450px) {
@@ -542,9 +539,45 @@ a:hover {
   .section__cont {
     height: fit-content;
   }
+  .places__text {
+    margin-left: 0;
+  }
+  .places__text--martinez {
+    margin-right: 0;
+  }
+  .main__secc,
+  .section__form,
+  .sectionContact {
+    height: fit-content;
+  }
+  .sectionContact {
+    margin: 40px 0;
+    padding-bottom: 30px;
+  }
+  .section__complete--col {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .section__complete {
+    align-items: center;
+  }
+  .section__label--apellido {
+    margin-left: 0;
+  }
+  label {
+    margin: 0;
+  }
+  .section__form {
+    gap: 15px;
+  }
+  .section__usuario {
+    width: auto;
+  }
+  .section__caja {
+    margin-left: 10px;
+  }
+  .section__checkbox {
+    margin-left: 10px;
+  }
 }
-// @media (max-width: 375px) {
-//   .section__cont {
-//     height: 40vh;
-//   }
-// }
