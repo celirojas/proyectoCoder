@@ -230,7 +230,7 @@ a:hover {
   background-image: url(../imgs/fondoContacto.jpg);
   background-size: cover;
   background-position: bottom center;
-  height: 100vh;
+  // height: 100vh;
   margin: 0;
   padding-top: 80px;
   display: flex;
@@ -241,8 +241,10 @@ a:hover {
 .sectionContact {
   background-color: rgba(246, 241, 241, 0.8);
   width: 40%;
-  height: 75vh;
+  //height: 75vh;
   padding-top: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   border-radius: 10px;
 }
 
@@ -250,12 +252,15 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  height: 60vh;
+  justify-content: center;
+  //gap: 25px;
+  //height: 65vh;
 }
 
 .section__complete {
   display: flex;
+  margin-bottom: 15px;
+  align-items: center;
 }
 
 .section__comentario {
@@ -308,6 +313,10 @@ a:hover {
 
 .section__buttonform:hover {
   color: #f7268a;
+}
+
+.section__checkbox {
+  margin: 0 5px 8px;
 }
 
 /*******************************Tiendas.html*****************************/
@@ -411,6 +420,13 @@ a:hover {
     display: flex;
     list-style: none;
     justify-content: space-between;
+    .fab {
+      color: black;
+      transition: all 0.3s;
+    }
+    .fab:hover {
+      color: #f7268a;
+    }
   }
 
   &__a {
@@ -553,6 +569,8 @@ a:hover {
   .sectionContact {
     margin: 40px 0;
     padding-bottom: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
   .section__complete--col {
     display: flex;
@@ -579,5 +597,6 @@ a:hover {
   }
   .section__checkbox {
     margin-left: 10px;
+    margin-bottom: 0;
   }
 }
