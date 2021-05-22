@@ -40,7 +40,7 @@ body {
 .slogan {
   height: 100%;
   display: flex;
-  /* align-items: center; */
+
   flex-direction: column;
   justify-content: center;
   padding-left: 5%;
@@ -129,13 +129,12 @@ a:hover {
   font-weight: 300;
   font-style: italic;
   font-size: 2 rem;
-  // padding: 50px 35px 0px 35px;
   text-align: center;
 }
 
 .section__text {
   color: #2b2b2b;
-  // padding: 20px 40px;
+
   font-weight: 300;
   line-height: 30px;
 }
@@ -154,10 +153,6 @@ a:hover {
   justify-content: space-evenly;
   align-items: center;
 }
-
-// .section__picture {
-//   margin-left: 70px;
-// }
 
 .section__descr {
   display: flex;
@@ -230,7 +225,7 @@ a:hover {
   background-image: url(../imgs/fondoContacto.jpg);
   background-size: cover;
   background-position: bottom center;
-  // height: 100vh;
+
   margin: 0;
   padding-top: 80px;
   display: flex;
@@ -241,7 +236,7 @@ a:hover {
 .sectionContact {
   background-color: rgba(246, 241, 241, 0.8);
   width: 40%;
-  //height: 75vh;
+
   padding-top: 30px;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -253,8 +248,6 @@ a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  //gap: 25px;
-  //height: 65vh;
 }
 
 .section__complete {
@@ -329,7 +322,7 @@ a:hover {
     font-weight: 300;
     font-style: italic;
     font-size: 2.5rem;
-    /* padding: 5px 35px; */
+
     text-align: center;
     margin-bottom: 30px;
   }
@@ -338,7 +331,7 @@ a:hover {
   }
   &__descr {
     width: 40%;
-    // height: 250px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -381,11 +374,14 @@ a:hover {
 }
 
 .places__direction {
-  color: #f7268a;
+  color: #2b2b2b;
   text-decoration: none;
   font-size: 16px;
   font-weight: 350;
   margin-left: 10px;
+}
+.places__direction:hover {
+  color: #f7268a;
 }
 
 /*******************************Footer************************************/
@@ -395,7 +391,6 @@ a:hover {
   align-items: flex-start;
   justify-content: space-around;
   background: #f5eef0;
-  // height: 40vh;
   &__container {
     display: flex;
     flex-direction: column;

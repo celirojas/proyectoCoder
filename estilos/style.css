@@ -23,7 +23,6 @@ body {
 .slogan {
   height: 100%;
   display: flex;
-  /* align-items: center; */
   flex-direction: column;
   justify-content: center;
   padding-left: 5%; }
@@ -266,7 +265,6 @@ a:hover {
     font-weight: 300;
     font-style: italic;
     font-size: 2.5rem;
-    /* padding: 5px 35px; */
     text-align: center;
     margin-bottom: 30px; }
   .places__img {
@@ -307,11 +305,14 @@ a:hover {
   width: 35px; }
 
 .places__direction {
-  color: #f7268a;
+  color: #2b2b2b;
   text-decoration: none;
   font-size: 16px;
   font-weight: 350;
   margin-left: 10px; }
+
+.places__direction:hover {
+  color: #f7268a; }
 
 /*******************************Footer************************************/
 .footer {
